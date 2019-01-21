@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: LC Posttypes
-Plugin URI: http://www.localhostph.com
+Plugin Name: Custom Posttypes
+Plugin URI: http://www.norbertferia.com
 Description: Posttypes plugin enbales you to create custom posttypes from the dashboard.
 Author: Norbert Feria
 Version: 1.0
-Author URI: http://www.localhostph.com
+Author URI: http://www.norbertferia.com
 */
 if(!defined('ABSPATH')) exit;
 
@@ -36,12 +36,6 @@ class lc_posttypes {
 	
 	function _activate(){
 		if(!current_user_can('activate_plugins' )) return;
-		if(NULL == get_role('devsupport')){
-			$adminrole = get_role( 'administrator' ); 
-			$result = add_role('devsupport',__( 'Development Support' ),$adminrole->capabilities);
-			$devsupport = get_role( 'devsupport' );
-			$devsupport->add_cap( 'manage_advanced_options' ); 
-	   }
 		global $wpdb;
 		$table_name = $this->get_tblname();
 		if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {		
@@ -83,7 +77,7 @@ class lc_posttypes {
 	}#function deactivate
 	
 	function _menu_item(){
-		add_submenu_page("edit.php", "", "LC Custom Posttypes", "manage_advanced_options", "manage-posttypes", array($this,'_admin_page'));
+		add_submenu_page("edit.php", "", "LC Custom Posttypes", "manage_options", "manage-posttypes", array($this,'_admin_page'));
 	}#function
 	
 	function _admin_page(){
