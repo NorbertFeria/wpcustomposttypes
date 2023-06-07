@@ -9,7 +9,7 @@
  * @wordpress-plugin
  * Plugin Name:       Custom Post Types
  * Plugin URI:        https://github.com/NorbertFeria/wpcustomposttypes
- * Description:       The custom Post Types plugin enables you to create dynamic custom post types from the dashboard.
+ * Description:       The Custom Post Types plugin enables you to create dynamic custom post types from the dashboard.
  * Version:           1.0.0
  * Author:            Norbert Feria
  * Author URI:        https://github.com/norbertferia
