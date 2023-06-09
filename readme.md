@@ -6,7 +6,7 @@ Norbert Feria
 
 ## Description:
 
-The Custom Post Types plugin enables you to create dynamic custom post types from the dashboard.
+The Custom Post Types plugin enables you to create and maange dynamic custom post types from the dashboard.
 
 ![wp-custom-post-types](https://github.com/NorbertFeria/wpcustomposttypes/assets/4241513/48380cd2-327f-4c27-959b-94340290c2b7)
 
@@ -19,6 +19,10 @@ Always take a backup of your files and db before installing, just in case ...
 3. Select the zip you downloaded, this will upload the zip and replace the existing installation without losing data  
 4. Activate the plugin through the 'Plugins' menu in WordPress (make sure you configured the database user has the right to create/modify tables and columns) 
 5. Add Custom Post Types by going to posts menu then custom Post Types menu.
+
+## Usage:
+
+View the usage [demo video](https://youtu.be/l95tcYCqxRk)
 
 ## Disclaimer:
 

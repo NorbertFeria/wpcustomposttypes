@@ -324,15 +324,10 @@ class Cpt_Admin {
 		global $wpdb;
 		$table_name = $this->get_tblname();
 		
-		$sql = "SELECT * FROM ".$table_name." WHERE ".$this->tblid."=".$_GET["id"];
-		$custom_posttype = $wpdb->get_row($sql);
-		
+		$sql = "DELETE FROM ".$table_name." WHERE ".$this->tblid."=".$_GET["id"];
+		$wpdb->query( $sql );
 		flush_rewrite_rules(true);
-		
-		$wpdb->query( $wpdb->prepare( 
-							"DELETE FROM ".$table_name."
-							 WHERE unik = %d",
-								$_GET["id"]));
+
 		$sdstr = "Custom Post Type successfully deleted.";
 		echo $sdstr;
 		$this->wpcpt_posttype_list();
