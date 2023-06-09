@@ -22,7 +22,7 @@ Always take a backup of your files and db before installing, just in case ...
 
 ## Usage:
 
-View the usage [demo video](https://youtu.be/l95tcYCqxRk)
+View the usage <a href="https://youtu.be/l95tcYCqxRk" target="_blank">demo video</a>
 
 ## Disclaimer:
 
